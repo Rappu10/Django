@@ -1,0 +1,8 @@
+<h1>Lista de Celulares</h1>
+<ul>
+    {% for celular in celulares %}
+        <li>
+            <a href="{% url 'detalle_celular' celular.id %}">{{ celular.nombre }}</a> - ${{ celular.precio }}
+        </li>
+    {% endfor %}
+</ul>

@@ -1,0 +1,6 @@
+<h1>Carrito de Compras</h1>
+<ul>
+    {% for item in items %}
+        <li>{{ item.cantidad }} x {{ item.celular.nombre }} - ${{ item.celular.precio }}</li>
+    {% endfor %}
+</ul>
