@@ -48,8 +48,7 @@
     </style>
 </head>
 <body>
-    <form action="/login/" method="post">
-        {% csrf_token %}
+    <form action="/login/"method="post">
         <label for="username">Username:</label>
         <input type="text" name="username" id="username" required>
         <label for="password">Password:</label>
